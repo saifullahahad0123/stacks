@@ -17,8 +17,7 @@ public class traversal {
             }
          while (!stack.isEmpty()) {
             stack.push(stack2.pop());
-            
-            }
+         }
 
     }
 }
