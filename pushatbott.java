@@ -4,19 +4,17 @@ public class pushatbott {
 
     static void pushAtBottom(Stack<Integer> stack, int value) {
 
-        // Base case
+       
         if (stack.isEmpty()) {
             stack.push(value);
             return;
         }
 
-        // Remove top element
+   
         int top = stack.pop();
 
-        // Recursively reach the bottom
         pushAtBottom(stack, value);
 
-        // Put the removed element back
         stack.push(top);
     }
 
